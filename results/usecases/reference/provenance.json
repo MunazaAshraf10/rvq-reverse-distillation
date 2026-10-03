@@ -1,0 +1,16 @@
+{
+  "args": {
+    "out": "results/usecases/reference",
+    "device": "cuda",
+    "use": "reference",
+    "limit": "150",
+    "conditions": "['ref:v4@1', 'ref:v4@5', 'ref:v4@10', 'ref:v1@5', 'text']",
+    "group": "8",
+    "save_audio": "3"
+  },
+  "git": "2b0c895e1910e0927b614d4ecda9d1c722fb4e7b",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

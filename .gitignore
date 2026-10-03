@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+dist/
+
+# data, caches, checkpoints and generated outputs
+/cache/
+/data/
+/runs/
+/outputs/
+wandb/
+*.safetensors
+*.pt
+
+# regenerable experiment outputs (per track result rows stay tracked)
+results/**/embeddings/*.jsonl
+results/usecases/**/embeddings/
+results/**/audio/
+results/**/log-*.txt
+
+.env

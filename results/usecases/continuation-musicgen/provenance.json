@@ -1,0 +1,16 @@
+{
+  "args": {
+    "out": "results/usecases/continuation-musicgen",
+    "device": "cuda",
+    "use": "continuation",
+    "limit": "150",
+    "conditions": "['musicgen']",
+    "group": "8",
+    "save_audio": "3"
+  },
+  "git": "25e3e75f892619d41ed93a0886d599ed18fb0aac",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

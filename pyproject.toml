@@ -1,0 +1,94 @@
+[project]
+name = "rvq-reverse-distillation"
+version = "0.1.0"
+description = "Reverse distillation of the withheld audio tokenizer of MiniMax Music 3"
+readme = "README.md"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+requires-python = ">=3.13"
+authors = [
+  { name = "Munaza Ashraf" },
+  { name = "Kash Pande" },
+  { name = "Muhammad Musa" },
+  { name = "Azka Ahmad" },
+  { name = "Khawar Islam" },
+]
+keywords = ["audio", "music", "rvq", "minimax", "codec", "mup"]
+classifiers = [
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.14",
+  "numpy>=2.3",
+  "safetensors>=0.8",
+  "huggingface-hub>=1.31",
+  "soundfile>=0.14",
+  "soxr>=1.0",
+  "tqdm>=4.67",
+]
+
+[project.optional-dependencies]
+train = ["wandb>=0.30"]
+minimax = [
+  "diffusers==0.40.0",
+  "transformers>=5.13",
+  "accelerate>=1.10",
+]
+eval = [
+  "librosa>=0.11",
+  "scipy>=1.16",
+  "pandas>=2.3",
+  "pyarrow>=21",
+  "sentencepiece>=0.2",
+]
+paper = ["matplotlib>=3.10"]
+dev = [
+  "ruff>=0.16",
+  "mypy>=2.3",
+]
+
+[project.scripts]
+rvq-ae = "rvq_ae.cli:main"
+
+[project.urls]
+Repository = "https://github.com/MunazaAshraf10/rvq-reverse-distillation"
+Weights = "https://huggingface.co/Munaza10/rvq-reverse-distillation"
+"Test set" = "https://huggingface.co/datasets/Munaza10/mm3-ood"
+Dataset = "https://huggingface.co/datasets/bghira/minimax-music3-rvq-reverse-distillation"
+
+[build-system]
+requires = ["hatchling>=1.32"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rvq_ae"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py313"
+src = ["src", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "N", "RUF"]
+ignore = ["N812"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["rvq_ae"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_return_any = false
+
+[[tool.mypy.overrides]]
+# diffusers and transformers ship no usable types for their model classes; treat them as untyped
+module = ["diffusers.*", "transformers.*", "librosa.*", "scipy.*", "pyarrow.*"]
+follow_imports = "skip"
+
+[[tool.mypy.overrides]]
+module = ["rvq_ae.minimax.*", "rvq_ae.experiments.*"]
+disallow_untyped_calls = false

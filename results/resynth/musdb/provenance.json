@@ -1,0 +1,17 @@
+{
+  "args": {
+    "out": "results/resynth/musdb",
+    "device": "cuda",
+    "source": "musdb",
+    "seconds": "20.0",
+    "limit": "0",
+    "conditions": "['enc:v1', 'enc:v4', 'sem:v4', 'text', 'dav', 'codec:encodec-2.2', 'codec:dac-1.7', 'codec:dac-2.6']",
+    "group": "8",
+    "save_audio": "2"
+  },
+  "git": "7ab557edab3366dc71adfc87d9e462cabad6e6ec",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

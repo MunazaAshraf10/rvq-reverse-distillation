@@ -1,0 +1,20 @@
+{
+  "args": {
+    "out": "results/replay/completed",
+    "device": "cuda",
+    "rule": "published",
+    "dataset": "bghira/minimax-music3-rvq-reverse-distillation",
+    "part": "holdout",
+    "limit": "32",
+    "encoders": "['v1', 'v4']",
+    "timelines": "['exact']",
+    "decodes": "['complete-greedy', 'complete-sampled']",
+    "perturbations": "[]",
+    "no_control": "True"
+  },
+  "git": "9f9ffa1ae256fb0f10809cdef268fd41a350eee7",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

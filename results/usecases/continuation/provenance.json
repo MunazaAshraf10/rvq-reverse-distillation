@@ -1,0 +1,16 @@
+{
+  "args": {
+    "out": "results/usecases/continuation",
+    "device": "cuda",
+    "use": "continuation",
+    "limit": "150",
+    "conditions": "['cont:v4', 'cont:v1', 'text', 'other']",
+    "group": "8",
+    "save_audio": "3"
+  },
+  "git": "54cdaaa387f58b11c87d66adcb5d48c6f6b606da",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

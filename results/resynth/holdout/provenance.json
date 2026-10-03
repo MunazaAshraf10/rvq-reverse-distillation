@@ -1,0 +1,17 @@
+{
+  "args": {
+    "out": "results/resynth/holdout",
+    "device": "cuda",
+    "source": "corpus:published:holdout",
+    "seconds": "20.0",
+    "limit": "100",
+    "conditions": "['enc:v1', 'enc:v4', 'sem:v4', 'true', 'text', 'dav', 'codec:encodec-2.2', 'codec:dac-1.7', 'codec:dac-2.6']",
+    "group": "8",
+    "save_audio": "2"
+  },
+  "git": "5bbe6b84310cafc842a2b0bcb439570ccf0851db",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

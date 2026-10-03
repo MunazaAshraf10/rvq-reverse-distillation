@@ -1,0 +1,19 @@
+{
+  "args": {
+    "out": "results/replay/published",
+    "device": "cuda",
+    "rule": "published",
+    "part": "holdout",
+    "limit": "0",
+    "encoders": "['v1', 'v2', 'v3', 'v4']",
+    "timelines": "['exact', 'nominal', 'stride']",
+    "decodes": "['encoder']",
+    "perturbations": "[]",
+    "no_control": "False"
+  },
+  "git": "87b97d9f350fa7ea32465ac17575b0a20b99ba9e",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

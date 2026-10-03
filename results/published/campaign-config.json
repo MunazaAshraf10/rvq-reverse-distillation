@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "model": "bghira/minimax-music-3",
+  "jobs_per_shard": 1,
+  "audio_duration": 180.0,
+  "num_inference_steps": 30,
+  "seed": 20260815,
+  "selected_jobs": 4000,
+  "skipped": {
+    "missing": 35,
+    "duplicate": 0,
+    "too_long": 0
+  },
+  "holdout_fraction": 0.05,
+  "holdout_hash_salt": "holdout-v1",
+  "sampling_variation_fraction": 0.2,
+  "sampling_variants": {
+    "default": {
+      "temperature": 1.0,
+      "flow_guidance_scale": 1.7
+    },
+    "low": {
+      "temperature": 0.85,
+      "flow_guidance_scale": 1.5
+    },
+    "high": {
+      "temperature": 1.15,
+      "flow_guidance_scale": 2.0
+    }
+  },
+  "legacy_default_sampling": {
+    "autoregressive_temperature": 1.0,
+    "autoregressive_sampling_top_k": 50,
+    "autoregressive_guidance_scale": 1.5,
+    "autoregressive_guidance_top_k": 50,
+    "flow_guidance_scale": 1.7,
+    "flow_num_inference_steps": 30,
+    "flow_scheduler": "FlowMatchEulerDiscreteScheduler",
+    "flow_scheduler_shift": 1.0
+  },
+  "lyric_bearing_jobs": 3772,
+  "instrumental_jobs": 228,
+  "hub_repo_id": "bghira/minimax-music3-rvq-reverse-distillation",
+  "alignment_convention": {
+    "priming_code_row": 0,
+    "emitted_code_row_offset": 1,
+    "nominal_flow_latents_per_semantic_frame": 3.4453125,
+    "canonical_exact_mapping": "alignment.chunk_stitching when present"
+  }
+}

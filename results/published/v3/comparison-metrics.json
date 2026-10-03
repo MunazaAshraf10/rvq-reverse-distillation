@@ -1,0 +1,52 @@
+{
+  "format": "simpletuner-minimaxmusic-rvq-three-model-comparison-v1",
+  "models": [
+    {
+      "acoustic_top1": 0.07169886997767858,
+      "acoustic_top5": 0.20938229251217533,
+      "ce_loss": 4.696246407248757,
+      "checkpoint": "checkpoint-17500",
+      "label": "v1, 41M",
+      "loss": 5.337855945933949,
+      "model_id": "SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
+      "semantic_top1": 0.41028941761363635,
+      "semantic_top5": 0.7838023792613636,
+      "step": 17500,
+      "teacher_kl_loss": 2.5664437033913354
+    },
+    {
+      "acoustic_top1": 0.0762291301094137,
+      "acoustic_top5": 0.21976204453963666,
+      "ce_loss": 4.6332796129877165,
+      "checkpoint": "checkpoint-17500",
+      "label": "v2, 155M",
+      "loss": 5.264569409320809,
+      "model_id": "SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2",
+      "semantic_top1": 0.42864884393063585,
+      "semantic_top5": 0.8017380554552023,
+      "step": 17500,
+      "teacher_kl_loss": 2.525154951679913
+    },
+    {
+      "acoustic_top1": 0.07652936662946429,
+      "acoustic_top5": 0.22019304547991073,
+      "ce_loss": 4.629444122314453,
+      "checkpoint": "checkpoint-17500",
+      "label": "v3, 155M + MERT",
+      "loss": 5.260235873135653,
+      "model_id": "SimpleTuner/open-rvq-encoder-minimax-music3-155m-v3",
+      "semantic_top1": 0.4303006258877841,
+      "semantic_top5": 0.8048234419389204,
+      "step": 17500,
+      "teacher_kl_loss": 2.523169430819425
+    }
+  ],
+  "protocol": {
+    "dataset": "bghira/minimax-music3-rvq-reverse-distillation",
+    "matched_step": 17500,
+    "records": 130,
+    "require_exact_alignment": true,
+    "split": "holdout",
+    "windows": 2768
+  }
+}

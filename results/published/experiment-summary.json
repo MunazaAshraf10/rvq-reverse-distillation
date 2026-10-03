@@ -1,0 +1,71 @@
+{
+  "encoders": [
+    {
+      "bytes": 163931632,
+      "condition_replay_checkpoint": "final",
+      "condition_replay_mean": 0.7624421353523548,
+      "config_filename": "encoders/minimax_music3_rvq_encoder_v1_41m_independent_heads.json",
+      "filename": "encoders/minimax_music3_rvq_encoder_v1_41m_independent_heads.safetensors",
+      "parameter_count": 40978944,
+      "sha256": "9683ba0a719fc8f462fb0013a413e22e59e3b29f50d90f34b25658fb827adb6e",
+      "source_checkpoint_path": "checkpoint-17500",
+      "source_repo_id": "SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
+      "source_revision": "e9fa3bba9b5bb3b76e7fd6705f9ca5dbb7638ec4",
+      "version": "v1"
+    },
+    {
+      "bytes": 618960456,
+      "condition_replay_checkpoint": "final",
+      "condition_replay_mean": 0.7698414775041433,
+      "config_filename": "encoders/minimax_music3_rvq_encoder_v2_155m_wide_independent_heads.json",
+      "filename": "encoders/minimax_music3_rvq_encoder_v2_155m_wide_independent_heads.safetensors",
+      "parameter_count": 154736064,
+      "sha256": "47dfffb7a76d95589752df0c59ff6eaf3496f6fcf5408d324218887e471023c7",
+      "source_checkpoint_path": "final",
+      "source_repo_id": "SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2",
+      "source_revision": "f317d72466b98cad097c1e6f4dd379f7e344c939",
+      "version": "v2"
+    },
+    {
+      "bytes": 618960456,
+      "condition_replay_checkpoint": "final",
+      "condition_replay_mean": 0.7702590204202212,
+      "config_filename": "encoders/minimax_music3_rvq_encoder_v3_155m_mert_aligned_independent_heads.json",
+      "filename": "encoders/minimax_music3_rvq_encoder_v3_155m_mert_aligned_independent_heads.safetensors",
+      "parameter_count": 154736064,
+      "sha256": "356e97fea65c486a28814dc778b52645807ab8f784c6021d2403f688a2bfe788",
+      "source_checkpoint_path": "final",
+      "source_repo_id": "SimpleTuner/open-rvq-encoder-minimax-music3-155m-v3",
+      "source_revision": "7c525705817d8878da02ed41429cad027552a568",
+      "version": "v3"
+    },
+    {
+      "bytes": 676055232,
+      "condition_replay_checkpoint": "final",
+      "condition_replay_mean": 0.8747961479883928,
+      "config_filename": "encoders/minimax_music3_rvq_encoder_v4_169m_autoregressive_depth_recommended.json",
+      "filename": "encoders/minimax_music3_rvq_encoder_v4_169m_autoregressive_depth_recommended.safetensors",
+      "parameter_count": 169008576,
+      "sha256": "e8fa93a7db2e5a090442d9492ea3f9f07664ce5bdb2ea7890559a4408f049744",
+      "source_checkpoint_path": "final",
+      "source_repo_id": "SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4",
+      "source_revision": "b9a9165b99d12cb48cac812776938c8d9332dd59",
+      "version": "v4"
+    }
+  ],
+  "format": "simpletuner-minimax-music3-rvq-collection-v1",
+  "metric": {
+    "dataset_repo_id": "bghira/minimax-music3-rvq-reverse-distillation",
+    "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111",
+    "name": "per-record mean stitched condition-embedding cosine",
+    "records": 130,
+    "serveurperso_v1_mean": 0.6633286081827604,
+    "split": "holdout",
+    "true_code_control_mean": 0.9999072317893688
+  },
+  "notes": [
+    "The v1 packaged checkpoint is step 17500; its replay metric was measured on v1 final.",
+    "V2, v3, and v4 replay metrics were measured on the packaged final checkpoints."
+  ],
+  "recommended_version": "v4"
+}

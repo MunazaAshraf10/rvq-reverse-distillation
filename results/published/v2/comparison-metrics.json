@@ -1,0 +1,56 @@
+{
+  "format": "simpletuner-minimaxmusic-rvq-comparison-v1",
+  "matched_step": 17500,
+  "metrics": {
+    "acoustic_top1": {
+      "better": "higher",
+      "label": "Acoustic top-1",
+      "v1": 0.07169886997767858,
+      "v2": 0.0762291301094137,
+      "v2_delta": 0.004530260131735131,
+      "winner": "v2"
+    },
+    "acoustic_top5": {
+      "better": "higher",
+      "label": "Acoustic top-5",
+      "v1": 0.20938229251217533,
+      "v2": 0.21976204453963666,
+      "v2_delta": 0.01037975202746133,
+      "winner": "v2"
+    },
+    "loss": {
+      "better": "lower",
+      "label": "Loss",
+      "v1": 5.337855945933949,
+      "v2": 5.264569409320809,
+      "v2_delta": -0.07328653661314011,
+      "winner": "v2"
+    },
+    "semantic_top1": {
+      "better": "higher",
+      "label": "Semantic top-1",
+      "v1": 0.41028941761363635,
+      "v2": 0.42864884393063585,
+      "v2_delta": 0.018359426316999494,
+      "winner": "v2"
+    },
+    "semantic_top5": {
+      "better": "higher",
+      "label": "Semantic top-5",
+      "v1": 0.7838023792613636,
+      "v2": 0.8017380554552023,
+      "v2_delta": 0.017935676193838623,
+      "winner": "v2"
+    }
+  },
+  "models": {
+    "v1": {
+      "model_id": "SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
+      "parameter_count": 40978944
+    },
+    "v2": {
+      "model_id": "SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2",
+      "parameter_count": 154736064
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "checkpoints": {
+    "serveurperso-v1": {
+      "checkpoint_bytes": 163955786,
+      "checkpoint_sha256": "fd7bfefb197cb7b65a6b6d9b1373c1772a15979f1a4b67d820764d610f0fb9a5",
+      "checkpoint_url": "https://www.serveurperso.com/ia/ssd/workspace/git/minimaxmusic.cpp/training/checkpoints/v1/best.pt",
+      "epoch": 17,
+      "reported_validation_loss": 5.292583839459852,
+      "source_commit": "d19efe9f94e41ac4c900aa30d56fe90c8dac7ef1",
+      "source_url": "https://github.com/ServeurpersoCom/minimaxmusic.cpp/commit/d19efe9f94e41ac4c900aa30d56fe90c8dac7ef1"
+    },
+    "simpletuner-v1": {
+      "checkpoint": "full/output/final",
+      "checkpoint_bytes": 163931632,
+      "checkpoint_sha256": "1cea88dddf7a48583c13ac661a548b7a3535b933a76356bb158420d24da32f22",
+      "global_step": 17640
+    },
+    "simpletuner-v2": {
+      "checkpoint": "v2/output/final",
+      "checkpoint_bytes": 618960456,
+      "checkpoint_sha256": "47dfffb7a76d95589752df0c59ff6eaf3496f6fcf5408d324218887e471023c7",
+      "global_step": 17660
+    },
+    "simpletuner-v3": {
+      "checkpoint": "v3/output/final",
+      "checkpoint_bytes": 618960456,
+      "checkpoint_sha256": "356e97fea65c486a28814dc778b52645807ab8f784c6021d2403f688a2bfe788",
+      "global_step": 17660
+    },
+    "simpletuner-v4": {
+      "checkpoint": "v4/output/final",
+      "checkpoint_bytes": 676055232,
+      "checkpoint_sha256": "e8fa93a7db2e5a090442d9492ea3f9f07664ce5bdb2ea7890559a4408f049744",
+      "global_step": 17660
+    }
+  },
+  "dataset": {
+    "repo_id": "bghira/minimax-music3-rvq-reverse-distillation",
+    "revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+  },
+  "official_replay_components": {
+    "license": "MiniMax-Music3 Community License",
+    "repo_id": "MiniMaxAI/MiniMax-Music3",
+    "revision": "fbdf52fbaaca799592917417eb05f1899f1255ec"
+  },
+  "serveurperso": {
+    "checkpoint_license": "not separately declared",
+    "checkpoint_sha256": "fd7bfefb197cb7b65a6b6d9b1373c1772a15979f1a4b67d820764d610f0fb9a5",
+    "checkpoint_url": "https://www.serveurperso.com/ia/ssd/workspace/git/minimaxmusic.cpp/training/checkpoints/v1/best.pt",
+    "code_license": "MIT",
+    "source_commit": "d19efe9f94e41ac4c900aa30d56fe90c8dac7ef1",
+    "source_url": "https://github.com/ServeurpersoCom/minimaxmusic.cpp/commit/d19efe9f94e41ac4c900aa30d56fe90c8dac7ef1"
+  }
+}

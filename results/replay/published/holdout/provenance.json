@@ -1,0 +1,20 @@
+{
+  "args": {
+    "out": "results/replay/published/holdout",
+    "device": "cuda",
+    "rule": "published",
+    "dataset": "bghira/minimax-music3-rvq-reverse-distillation",
+    "part": "holdout",
+    "limit": "0",
+    "encoders": "['runs/published/v4_169m/seed-1/final', 'runs/published/v4_169m/seed-2/final', 'runs/published/v4_169m/seed-3/final', 'runs/published/v2_155m/seed-1/final', 'runs/published/v2_155m/seed-2/final', 'runs/published/v2_155m/seed-3/final', 'runs/published/v1_41m/seed-1/final', 'runs/published/v1_41m/seed-2/final', 'runs/published/v1_41m/seed-3/final']",
+    "timelines": "['exact']",
+    "decodes": "['encoder']",
+    "perturbations": "[]",
+    "no_control": "False"
+  },
+  "git": "c85a53e9c672efe87cadc2b404f62d681d464e8d",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

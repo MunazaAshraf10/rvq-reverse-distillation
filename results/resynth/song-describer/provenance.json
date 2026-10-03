@@ -1,0 +1,17 @@
+{
+  "args": {
+    "out": "results/resynth/song-describer",
+    "device": "cuda",
+    "source": "song-describer",
+    "seconds": "20.0",
+    "limit": "200",
+    "conditions": "['enc:v1', 'enc:v4', 'sem:v4', 'text', 'dav', 'codec:encodec-2.2', 'codec:dac-1.7', 'codec:dac-2.6']",
+    "group": "8",
+    "save_audio": "3"
+  },
+  "git": "c4319743250a96af2ecbbcaa33682d55c864cc26",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}

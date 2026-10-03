@@ -1,0 +1,20 @@
+{
+  "args": {
+    "out": "results/replay/genre-ood/test-ood",
+    "device": "cuda",
+    "rule": "genre-ood",
+    "dataset": "bghira/minimax-music3-rvq-reverse-distillation",
+    "part": "test-ood",
+    "limit": "200",
+    "encoders": "['runs/genre-ood/v4_169m/seed-1/final', 'runs/genre-ood/v4_169m/seed-2/final', 'runs/genre-ood/v4_169m/seed-3/final', 'runs/genre-ood/v2_155m/seed-1/final', 'runs/genre-ood/v2_155m/seed-2/final', 'runs/genre-ood/v2_155m/seed-3/final', 'runs/genre-ood/v2_169m_deep/seed-1/final', 'runs/genre-ood/v2_169m_deep/seed-2/final', 'runs/genre-ood/v2_169m_deep/seed-3/final', 'runs/genre-ood/v4_157m_no_feedback/seed-1/final', 'runs/genre-ood/v4_157m_no_feedback/seed-2/final', 'runs/genre-ood/v4_157m_no_feedback/seed-3/final', 'runs/genre-ood/v1_41m/seed-1/final', 'runs/genre-ood/v1_41m/seed-2/final', 'runs/genre-ood/v1_41m/seed-3/final', 'runs/genre-ood/v4_169m_augmented/seed-1/final', 'runs/genre-ood/v4_169m_augmented/seed-2/final', 'runs/genre-ood/v4_169m_augmented/seed-3/final']",
+    "timelines": "['exact']",
+    "decodes": "['encoder']",
+    "perturbations": "[]",
+    "no_control": "False"
+  },
+  "git": "2b0c895e1910e0927b614d4ecda9d1c722fb4e7b",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dataset_revision": "5029b1e7f1bbfbf028b76b38564fecccda94a111"
+}
