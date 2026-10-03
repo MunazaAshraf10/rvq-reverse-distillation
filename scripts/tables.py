@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+from huggingface_hub.errors import HfHubHTTPError
 
 from rvq_ae.constants import DATASET_REPO
 from rvq_ae.data.records import load_records
@@ -228,8 +229,11 @@ def calibration_table() -> Table:
 
 
 def corpus_table() -> Table:
-    """Content statistics of the corpus and of both split rules."""
-    grouped = load_records(DATASET_REPO, revision=DATASET_REVISION)
+    """Content statistics of the corpus and of both split rules (needs the corpus index from the Hub)."""
+    try:
+        grouped = load_records(DATASET_REPO, revision=DATASET_REVISION)
+    except (OSError, HfHubHTTPError) as error:
+        raise MissingInputError(f"corpus index ({error.__class__.__name__})") from error
     records = [record for part in grouped.values() for record in part]
     published = make_split(grouped, PUBLISHED).parts
     strict = make_split(grouped, GENRE_OOD)
