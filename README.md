@@ -101,7 +101,7 @@ study took about 110 GPU hours on four RTX 3090s.
 @article{ashraf2026reverse,
   title  = {Recovering a Withheld Audio Tokenizer from Its Generator: Reverse Distillation of the
             {MiniMax Music 3} Encoder, In and Out of Distribution},
-  author = {Munaza Ashraf and Kash Pande and Muhammad Musa and Azka Ahmad and Khawar Islam},
+  author = {Munaza Ashraf and bghira},
   year   = {2026},
   url    = {https://github.com/MunazaAshraf10/rvq-reverse-distillation}
 }

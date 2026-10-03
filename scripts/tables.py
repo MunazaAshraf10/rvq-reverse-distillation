@@ -680,7 +680,7 @@ TABLES: dict[str, tuple[Callable[[], Table], str]] = {
     "reproduction": (
         reproduction_table,
         "Validation of our reimplementation of condition replay against previously published per track "
-        "values of our preliminary checkpoints (130 exact held-out tracks).",
+        "values of four preliminary checkpoints (130 exact held-out tracks).",
     ),
     "timeline": (
         timeline_table,

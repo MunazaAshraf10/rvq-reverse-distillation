@@ -8,10 +8,7 @@ license-files = ["LICENSE"]
 requires-python = ">=3.13"
 authors = [
   { name = "Munaza Ashraf" },
-  { name = "Kash Pande" },
-  { name = "Muhammad Musa" },
-  { name = "Azka Ahmad" },
-  { name = "Khawar Islam" },
+  { name = "bghira" },
 ]
 keywords = ["audio", "music", "rvq", "minimax", "codec", "mup"]
 classifiers = [
